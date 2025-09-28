@@ -6,8 +6,8 @@ body {
     padding-top: 50px;
 }
 
-.print-key {
-    /* THE CRUCIAL LINE: Hides the key on the computer screen */
+.print-key, 
+.print-key-two {
     display: none; 
 }
 
@@ -28,5 +28,13 @@ body {
         font-weight: bold;
         color: #000; 
         padding: 100px 0;
+    }
+        /* Reveals the second key, styled differently (e.g., smaller) */
+    .print-key-two {
+        display: block !important; 
+        font-size: 18pt;
+        font-weight: normal;
+        color: #000; 
+        padding-bottom: 50px;
     }
 }
