@@ -37,4 +37,12 @@ body {
         color: #000; 
         padding-bottom: 50px;
     }
+    
+    .white-text {
+        color: #FFFFFF;
+        background-color: #FFFFFF;
+        display: block;
+        font-size: 12pt;
+    }
 }
+
