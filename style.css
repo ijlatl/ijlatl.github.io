@@ -1,0 +1,32 @@
+/* --- Screen Styles (Default View) --- */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.print-key {
+    /* THE CRUCIAL LINE: Hides the key on the computer screen */
+    display: none; 
+}
+
+/* --- Print Styles (Only Active when printing) --- */
+
+@media print {
+    /* Hides the instructions on the paper so only the key stands out */
+    .main-content {
+        display: none;
+    }
+
+    .print-key {
+        /* Overrides the screen style: Makes the element visible on paper */
+        display: block !important; 
+        
+        /* Make it stand out */
+        font-size: 36pt;
+        font-weight: bold;
+        color: #000; 
+        padding: 100px 0;
+    }
+}
